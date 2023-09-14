@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body{
     font-family: 'Fredoka', sans-serif;
 }
 
@@ -13,13 +16,57 @@
     margin-bottom: 3rem;
 }
 
-.contenitore{
-    background-color:aqua;
-    width: 60%;
+.contenitore-main{
+    width: 80%;
     margin: auto;
 }
 
 p{
     text-align: center;
+    margin-bottom: 3rem;
 }
 
+/*Occupiamoci di creare le varie schede personali*/
+
+/*Prima il contenitore che raccoglierà ogni singola persona*/
+.scheda{
+    float: left;
+    width: calc(100% / 3 - 20px);
+    background-color: black;
+    color: white;
+    line-height: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+/*Ora tutte le classi che formano le varie informazioni*/
+.foto{
+    width: 70px;
+    margin-right: 0.6rem;
+    float: left;
+}
+
+.dati{
+    padding: 5px;
+}
+
+.nome{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.professione{
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.email{
+    font-size: 0.7rem;
+    color: lightskyblue;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
